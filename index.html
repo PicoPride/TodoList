@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="card">
+        <h2>To Do List</h2>
+        <div class="row">
+          <input id="input-box" type="text" placeholder="Add Your Text" />
+        </div>
+        <div class="selection">
+          <label for=""
+            >Date:
+            <input id="date-picker" type="date" placeholder="Add Your Text"
+          /></label>
+          <label for="Priority"
+            >Priority:
+            <select name="Priority" id="drop-down">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select></label
+          >
+          <button id="btn" onclick="addList()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+          <li>Task 4</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  background: linear-gradient(45deg, #e0f4ff, #87c4ff);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  max-width: 565px;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+.card h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  color: #504e4e;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 25px; */
+  margin: 0 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 30px;
+  padding: 10px;
+}
+.selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 25px; */
+  margin: 0 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 30px;
+}
+.selection #date-picker,
+#drop-down {
+  flex: 1;
+  border: 1px solid #777777;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  font-weight: 14px;
+  margin-right: 10px;
+}
+.selection label {
+  color: #4f4f4f;
+}
+.row #input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  font-size: 14px;
+
+}
+#btn {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  border-radius: 10px;
+  background-color: rgb(252, 81, 23);
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+#list-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ul li {
+  list-style: none;
+  user-select: none;
+  font-size: 18px;
+  margin-left: 25px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: #555;
+}
+ul li::before {
+  content: "";
+  /* background-image: url(./imgs/unchecked.png); */
+  border: 1px solid #555;
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 12px;
+  top: 8px;
+  background-size: cover;
+  background-position: center;
+}
+ul li.checked {
+  text-decoration: line-through;
+  color: #6d6c6c;
+}
+ul li.checked::before {
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(252, 81, 23);
+  border: 1px solid rgb(252, 81, 23);
+  background-image: url(./imgs/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+ul li span:hover {
+  background-color: #e1dfdf;
+}
+ul li p {
+  position: absolute;
+  right: 80px;
+  top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  text-align: left;
+}
+ul li h6 {
+  position: absolute;
+  right: 200px;
+  top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+}
+.Low {
+  background-color: green;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.Medium {
+  background-color: rgb(214 214 0);
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.High {
+  background-color: red;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: 500;
+}
